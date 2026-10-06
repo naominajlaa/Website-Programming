@@ -11,7 +11,7 @@ export function FormTerpisah() {
 
   return (
     <form className="use-state-form" onSubmit={handleSubmit}>
-      <h3>State Terpisah</h3>
+      <h3>Profile</h3>
       <div>
         <label htmlFor="nama-terpisah">Nama</label>
         <br />
@@ -75,7 +75,7 @@ export function FormObject() {
 
   return (
     <form className="use-state-form" onSubmit={handleSubmit}>
-      <h3>State Object</h3>
+      <h3>Transaksi</h3>
       <div>
         <label htmlFor="nama-object">Nama</label>
         <br />

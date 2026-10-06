@@ -10,9 +10,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
-  padding: 16px 0;
-  border-bottom: 1px solid #ddd;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid #d8d8d8;
+  background: #fff;
+  text-align: left;
 }
 
 .navbar__brand,
@@ -22,15 +24,39 @@
 }
 
 .navbar__brand {
+  font-size: 1rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .navbar__links {
   display: flex;
-  gap: 16px;
+  align-items: center;
+  gap: 6px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.navbar__links a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #444;
+  font-size: 0.9rem;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.navbar__links a:hover,
+.navbar__links a:focus-visible {
+  background: #f0f0f0;
+  color: #000;
+}
+
+.navbar__brand:focus-visible,
+.navbar__links a:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 2px;
 }
 
 .hero {
@@ -140,6 +166,13 @@
 
 @media (max-width: 560px) {
   .navbar {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;
+  }
+
+  .navbar__links {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
