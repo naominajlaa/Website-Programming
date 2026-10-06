@@ -1,13 +1,10 @@
-import { Component } from "react";
-
-class HeaderClass extends Component {
-  render() {
-    return (
-      <header>
-        <h1>Selamat Datang di Aplikasi React</h1>
-      </header>
-    );
-  }
+function Header() {
+  return (
+    <header className="hero">
+      <h1>Selamat Datang di Aplikasi Keuangan</h1>
+      <p>Manajemen keuangan Anda yang sederhana dan efisien.</p>
+    </header>
+  );
 }
 
-export default HeaderClass;
+export default Header;
