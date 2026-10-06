@@ -1,14 +1,10 @@
-import { Component } from "react";
-
-class CardClass extends Component {
-  render() {
-    return (
-      <div className="card">
-        <h3>Card Title</h3>
-        <p>This is a card component.</p>
-      </div>
-    );
-  }
+function Card() {
+  return (
+    <article className="card">
+      <h3>Feature</h3>
+      <p>Deskripsi singkat tentang fitur ini.</p>
+    </article>
+  );
 }
 
-export default CardClass;
+export default Card;

@@ -1,13 +1,9 @@
-import { Component } from "react";
-
-class FooterClass extends Component {
-  render() {
-    return (
-      <footer>
-        <p>&copy; 2026 Aplikasi React. All rights reserved.</p>
-      </footer>
-    );
-  }
+function Footer() {
+  return (
+    <footer className="site-footer">
+      <p>&copy; 2026 Aplikasi React. All rights reserved.</p>
+    </footer>
+  );
 }
 
-export default FooterClass;
+export default Footer;
